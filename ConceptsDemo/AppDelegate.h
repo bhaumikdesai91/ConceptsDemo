@@ -12,6 +12,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-
+-(BOOL)scheduleSimpleLocalNotification;
+-(BOOL)scheduleInvitationLocalNotification;
+-(BOOL)scheduleReplyLocalNotification;
 @end
 

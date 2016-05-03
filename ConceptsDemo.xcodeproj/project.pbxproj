@@ -13,6 +13,9 @@
 		0A431EE41CCE1B7E00FD84E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A431EE21CCE1B7E00FD84E3 /* Main.storyboard */; };
 		0A431EE61CCE1B7E00FD84E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A431EE51CCE1B7E00FD84E3 /* Assets.xcassets */; };
 		0A431EE91CCE1B7E00FD84E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A431EE71CCE1B7E00FD84E3 /* LaunchScreen.storyboard */; };
+		0A431EF31CCE1C6F00FD84E3 /* MainMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A431EF11CCE1C6F00FD84E3 /* MainMenuCell.m */; };
+		0A431EF41CCE1C6F00FD84E3 /* MainMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A431EF21CCE1C6F00FD84E3 /* MainMenuCell.xib */; };
+		0A431EF91CCE2A4400FD84E3 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A431EF81CCE2A4400FD84E3 /* NotificationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		0A431EE51CCE1B7E00FD84E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A431EE81CCE1B7E00FD84E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A431EEA1CCE1B7E00FD84E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A431EF01CCE1C6F00FD84E3 /* MainMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuCell.h; path = "Custom Classes/MainMenuCell/MainMenuCell.h"; sourceTree = "<group>"; };
+		0A431EF11CCE1C6F00FD84E3 /* MainMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuCell.m; path = "Custom Classes/MainMenuCell/MainMenuCell.m"; sourceTree = "<group>"; };
+		0A431EF21CCE1C6F00FD84E3 /* MainMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenuCell.xib; path = "Custom Classes/MainMenuCell/MainMenuCell.xib"; sourceTree = "<group>"; };
+		0A431EF71CCE2A4400FD84E3 /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotificationViewController.h; path = "Controllers/Notification Controller/NotificationViewController.h"; sourceTree = "<group>"; };
+		0A431EF81CCE2A4400FD84E3 /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotificationViewController.m; path = "Controllers/Notification Controller/NotificationViewController.m"; sourceTree = "<group>"; };
+		0A431EFE1CCE390B00FD84E3 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		0A431EFF1CCE398400FD84E3 /* ConceptsDemo-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ConceptsDemo-PrefixHeader.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +68,15 @@
 		0A431ED81CCE1B7E00FD84E3 /* ConceptsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0A431EDC1CCE1B7E00FD84E3 /* AppDelegate.h */,
-				0A431EDD1CCE1B7E00FD84E3 /* AppDelegate.m */,
-				0A431EDF1CCE1B7E00FD84E3 /* ViewController.h */,
-				0A431EE01CCE1B7E00FD84E3 /* ViewController.m */,
+				0A431EFA1CCE2A4800FD84E3 /* Controllers */,
+				0A431EF51CCE1CA600FD84E3 /* Custom Classes */,
 				0A431EE21CCE1B7E00FD84E3 /* Main.storyboard */,
 				0A431EE51CCE1B7E00FD84E3 /* Assets.xcassets */,
 				0A431EE71CCE1B7E00FD84E3 /* LaunchScreen.storyboard */,
 				0A431EEA1CCE1B7E00FD84E3 /* Info.plist */,
 				0A431ED91CCE1B7E00FD84E3 /* Supporting Files */,
+				0A431EFE1CCE390B00FD84E3 /* Constants.h */,
+				0A431EFF1CCE398400FD84E3 /* ConceptsDemo-PrefixHeader.pch */,
 			);
 			path = ConceptsDemo;
 			sourceTree = "<group>";
@@ -77,6 +87,61 @@
 				0A431EDA1CCE1B7E00FD84E3 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A431EF51CCE1CA600FD84E3 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0A431EF61CCE1CB100FD84E3 /* Main Menu Cell */,
+			);
+			name = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		0A431EF61CCE1CB100FD84E3 /* Main Menu Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0A431EF01CCE1C6F00FD84E3 /* MainMenuCell.h */,
+				0A431EF11CCE1C6F00FD84E3 /* MainMenuCell.m */,
+				0A431EF21CCE1C6F00FD84E3 /* MainMenuCell.xib */,
+			);
+			name = "Main Menu Cell";
+			sourceTree = "<group>";
+		};
+		0A431EFA1CCE2A4800FD84E3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A431EFC1CCE311700FD84E3 /* Application Delegate */,
+				0A431EFD1CCE312300FD84E3 /* Main menu */,
+				0A431EFB1CCE2A4F00FD84E3 /* Notification Controller */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0A431EFB1CCE2A4F00FD84E3 /* Notification Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A431EF71CCE2A4400FD84E3 /* NotificationViewController.h */,
+				0A431EF81CCE2A4400FD84E3 /* NotificationViewController.m */,
+			);
+			name = "Notification Controller";
+			sourceTree = "<group>";
+		};
+		0A431EFC1CCE311700FD84E3 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				0A431EDC1CCE1B7E00FD84E3 /* AppDelegate.h */,
+				0A431EDD1CCE1B7E00FD84E3 /* AppDelegate.m */,
+			);
+			name = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		0A431EFD1CCE312300FD84E3 /* Main menu */ = {
+			isa = PBXGroup;
+			children = (
+				0A431EDF1CCE1B7E00FD84E3 /* ViewController.h */,
+				0A431EE01CCE1B7E00FD84E3 /* ViewController.m */,
+			);
+			name = "Main menu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +175,15 @@
 				TargetAttributes = {
 					0A431ED51CCE1B7E00FD84E3 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 56T8BECPLN;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -139,6 +213,7 @@
 				0A431EE91CCE1B7E00FD84E3 /* LaunchScreen.storyboard in Resources */,
 				0A431EE61CCE1B7E00FD84E3 /* Assets.xcassets in Resources */,
 				0A431EE41CCE1B7E00FD84E3 /* Main.storyboard in Resources */,
+				0A431EF41CCE1C6F00FD84E3 /* MainMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +227,8 @@
 				0A431EE11CCE1B7E00FD84E3 /* ViewController.m in Sources */,
 				0A431EDE1CCE1B7E00FD84E3 /* AppDelegate.m in Sources */,
 				0A431EDB1CCE1B7E00FD84E3 /* main.m in Sources */,
+				0A431EF91CCE2A4400FD84E3 /* NotificationViewController.m in Sources */,
+				0A431EF31CCE1C6F00FD84E3 /* MainMenuCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +272,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Push Services: com.digicorp.demopush";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Push Services: com.digicorp.demopush";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -217,6 +295,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "dfc87618-1171-4166-875f-b5f36f81995c";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -239,7 +318,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Push Services: com.digicorp.demopush";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Push Services: com.digicorp.demopush";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -254,6 +334,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "dfc87618-1171-4166-875f-b5f36f81995c";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -263,10 +344,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kuntal Shah (887VD54RPD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kuntal Shah (887VD54RPD)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ConceptsDemo/ConceptsDemo-PrefixHeader.pch";
 				INFOPLIST_FILE = ConceptsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Digicorp.ConceptsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digicorp.demopush;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "dfc87618-1171-4166-875f-b5f36f81995c";
 			};
 			name = Debug;
 		};
@@ -274,10 +361,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kuntal Shah (887VD54RPD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kuntal Shah (887VD54RPD)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ConceptsDemo/ConceptsDemo-PrefixHeader.pch";
 				INFOPLIST_FILE = ConceptsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Digicorp.ConceptsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digicorp.demopush;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "dfc87618-1171-4166-875f-b5f36f81995c";
 			};
 			name = Release;
 		};
@@ -300,6 +393,7 @@
 				0A431EEF1CCE1B7E00FD84E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
